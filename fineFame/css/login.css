@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
+
+
+/* NAVBAR E HEADER*/
+.navbar{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 1px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2; 
+}
+
+.top_lista{
+    padding-top: 100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.item-menu a{
+    float: right;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;   
+    padding: 10px 4%;
+    padding-right: 110px;
+}
+
+.txt{
+    line-height: 30px;
+    padding-right: 40px;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+}
+
+/* HEADER */
+
+.logo{
+    padding-left: 20px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.logo_png{
+    width: 60px;
+    height: 60px;
+}
+
+.logo_txt{
+    font-size: 50px;
+    font-family: 'League Gothic', sans-serif;
+    line-height: 50px;
+}
+
+.txt_menu{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 54px;
+    padding-right: 20px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* FORMULÁRIO */
+
+.form{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 916px) {
+    .titulo{
+        font-size: 42px;
+    }
+    
+}
+
+.input-form{
+    width: 300px;
+    height: 60px;
+    min-width: 200px;
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    margin: 5px;
+}
+
+.input-form input{
+    width: 100%;
+    outline: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 916px) {
+    .input-form input{
+        font-size: 24px;
+    }
+    
+}
+
+.input-form input:focus{
+    border: solid 1px green;
+}
+
+.input-form i{
+    position: absolute;
+    top: 22px;
+    left: 12px;
+}
+
+@media screen and (max-width: 916px) {
+    .input-form i{
+        font-size: 17px;
+    }
+        
+}
+
+.referenciar_login i{
+    cursor: pointer;
+}
+
+.botao_cadastro{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 916px) {
+    .botao_cadastro{
+        flex-direction: column;
+    }
+    
+}
+
+.botao{
+   background-color: black;
+   color: white;
+   width: 150px;
+   height: 40px;
+   border-radius: 10px;
+   margin: 5px;
+}
+
+@media screen and (max-width: 916px) {
+    .botao{
+        width: 245px;
+        font-size: 20px;
+    }
+    
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    transition: 0.5s;
+}
+
+.referenciar_login{
+    padding-top: 15px;
+}
+
+.referenciar_login a{
+    color: black;
+    font-family: 'Raleway', sans-serif;   
+    font-size: 15px;
+}
+
+@media screen and (max-width: 916px) {
+    .referenciar_login a{
+        font-size: 24px;
+    }
+    
+}
+
+.botao_cadastrar{
+    background-color: white;
+   color: black;
+   border: solid 2px black;
+   width: 300px;
+   height: 40px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 916px) {
+    .botao_cadastrar{
+        font-size: 23px;
+    }
+    
+}
+
+.botao_cadastrar:hover{
+    background-color: black;
+    color: white;
+    border: solid 2px black;
+    transition: 0.5s;
+}

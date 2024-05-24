@@ -1,0 +1,289 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
+
+/* NAVBAR */
+.navbar{
+    background-color: white;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 1px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2; 
+}
+
+.top_lista{
+    padding-top: 100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.item-menu a{
+    float: right;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;   
+    padding: 10px 4%;
+    padding-right: 110px;
+}
+
+.txt{
+    line-height: 30px;
+    padding-right: 40px;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+}
+
+
+/* HEADER */
+
+.logo{
+    padding-left: 20px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.logo_png{
+    width: 60px;
+    height: 60px;
+}
+
+.logo_txt{
+    font-size: 50px;
+    font-family: 'League Gothic', sans-serif;
+    line-height: 50px;
+}
+
+.txt_menu{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 54px;
+    padding-right: 20px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* CARRINHO */
+
+
+.carrinho{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 916px) {
+    .titulo{
+        font-size: 42px;
+    }
+    
+}
+
+.quadro{
+    width:900px;
+    height: 60px;
+    display: flex;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 916px) {
+    .quadro{
+        width: 400px;
+        height: 82px;
+    }
+    
+}
+
+.quadro-esquerda{
+    width: 70%;
+    height: 100%;
+    display: flex;
+
+}
+
+@media screen and (max-width: 916px) {
+    .quadro-esquerda{
+        width: 62%;  
+        font-size: 31px;
+    }
+    
+}
+
+.nome{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 25px;
+    color: #222222 ;
+}
+
+@media screen and (max-width: 916px) {
+    .nome{
+        width: 100%;
+        font-size: 35px;
+    }
+    
+}
+
+.autor{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'Fira Sans', sans-serif;    
+    color: #3b3b3b ;
+}
+
+@media screen and (max-width: 916px) {
+    .autor{
+        display: none;
+    }
+    
+}
+
+.valor{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 23px;
+    font-family: 'League Gothic', sans-serif;
+    color: #3b3b3b ;
+}
+
+@media screen and (max-width: 916px) {
+    .valor{
+        font-size: 33px;
+    }
+    
+}
+
+.final{
+    width:900px;
+    height: 60px;
+    display: flex;
+    margin: 5px;
+}
+
+@media screen and (max-width: 916px) {
+    .final{
+        width: 345px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+.total{
+    display: flex;
+}
+.valor_total{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-family: 'Fira Sans', sans-serif;    
+    color: #3b3b3b ;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 916px) {
+    .valor_total{
+        font-size: 31px;
+    }
+    
+}
+
+.total_carrinho{
+    display: flex;
+}
+
+
+.botao_compra{
+    background-color: black;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 5px;  
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 916px) {
+    .botao_compra{
+        width: 80%;
+        font-size: 28px;    
+    }
+    
+}
+
+.botao_compra:hover{
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    transition: 0.5s;
+
+}
+
+.botao_limpar{
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 5px;  
+    color: black;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 916px) {
+    .botao_limpar{
+        width: 80%;
+        font-size: 28px;
+    }
+    
+}
+
+
+.botao_limpar:hover{
+    background-color: black;
+    color: white;
+    border: solid 2px black;
+    transition: 0.5s;
+
+}

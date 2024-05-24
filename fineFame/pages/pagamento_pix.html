@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/pagamento_pix.css"/>
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <script defer src="../js/pagamento_pix.js"></script> 
+    </head>
+
+    <body id="pagamento" class="pagamento">
+
+        <nav class="navbar">
+
+            <ul class="top_lista">
+                <li class="item-menu">
+                    <a href="../index.html">
+                        <span class="txt">Início</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="carrinho.html">
+                        <span class="txt">Carrinho</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="login.html">
+                        <span class="txt">Login</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="cadastro.html">
+                        <span class="txt">Cadastro</span>
+                    </a>
+                </li>
+            </ul>
+                
+        </nav>
+        
+
+        <header class="header">
+            <div class="logo">
+                <div class="logo_txt">FINE</div>
+                <img class="logo_png" src="../img/tube.png">
+                <div class="logo_txt">FAME</div>
+            </div>
+
+            <div id="txt_menu" class="txt_menu" onclick="showMenu()" id="btn"> Menu </div>
+        </header>
+
+        <form class="form" id="form">
+            <div class="titulo">Pagamento PIX</div>
+            <div class="input-form">
+                <select name="forma_pagamento" id="forma_pagamento">
+                    <option value="Crédito" name="Credito" selected> Crédito</option>
+                    <option value="Débito" name="Debito"> Débito</option>
+                    <option value="Pix" name="Pix"> Pix</option>
+                </select>
+            </div>
+            <div class="subtitulo"> QR code</div>            
+            <div>
+                <img src="../img/Qrlogo.jpeg">
+            </div>
+            
+            <div class="input-form">
+                <button type="button" onclick="pagar()" class="botao_pagar"> Concluir </button>
+            </div>
+        </form>
+    </body>
+</html>

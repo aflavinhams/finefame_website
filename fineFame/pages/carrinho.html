@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/carrinho.css"/>
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <script defer src="../js/carrinho.js"></script> 
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+
+            <ul class="top_lista">
+                <li class="item-menu">
+                    <a href="../index.html">
+                        <span class="txt">Início</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="carrinho.html">
+                        <span class="txt">Carrinho</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="login.html">
+                        <span class="txt">Login</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="cadastro.html">
+                        <span class="txt">Cadastro</span>
+                    </a>
+                </li>
+            </ul>
+                
+        </nav>
+        
+        <header class="header">
+            <div class="logo">
+                <div class="logo_txt">FINE</div>
+                <img class="logo_png" src="../img/tube.png">
+                <div class="logo_txt">FAME</div>
+            </div>
+
+            <div id="txt_menu" class="txt_menu" onclick="showMenu()" id="btn"> Menu </div>
+        </header>
+
+        
+
+        <div class="carrinho">
+            <div class="titulo">Carrinho</div>
+            <div id="produtos_carrinho">
+            
+            </div>
+            <div class="final">
+                <div id="total_carrinho" class="total_carrinho">  </div>
+                <button type="button" onclick="limpar()" class="botao_limpar"> Limpar </button>
+                <button type="button" onclick="comprar()" class="botao_compra"> Finalizar Compra </button>
+            </div>
+        </div>
+            
+        
+    </body>
+
+</html>

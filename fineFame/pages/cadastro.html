@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/cadastro.css"/>
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <script defer src="../js/cadastro.js"></script> 
+    </head>
+
+    <body id="cadastro" class="cadastro">
+
+        <nav class="navbar">
+
+            <ul class="top_lista">
+                <li class="item-menu">
+                    <a href="../index.html">
+                        <span class="txt">Início</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="carrinho.html">
+                        <span class="txt">Carrinho</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="login.html">
+                        <span class="txt">Login</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="cadastro.html">
+                        <span class="txt">Cadastro</span>
+                    </a>
+                </li>
+            </ul>
+                
+        </nav>
+        
+
+        <header class="header">
+            <div class="logo">
+                <div class="logo_txt">FINE</div>
+                <img class="logo_png" src="../img/tube.png">
+                <div class="logo_txt">FAME</div>
+            </div>
+
+            <div id="txt_menu" class="txt_menu" onclick="showMenu()" id="btn"> Menu </div>
+        </header>
+
+        <form class="form" id="form">
+            <div class="titulo">Cadastro</div>
+            <div class="input-form">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Nome" name="Nome" id="nome">
+            </div>
+            <div class="input-form">
+                <i class="fa-solid fa-paintbrush"></i>                
+                <input type="number" placeholder="CPF" name="CPF" id="cpf">
+            </div>
+            <div class="input-form">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="E-mail" name="E-mail" id="email">
+            </div>
+            <div class="input-form">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Senha" name="Senha" id="senha">
+            </div>
+            <div class="input-form">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Confirmar Senha" name="ConfirmarSenha" id="confirmarSenha">
+            </div>
+            <div class="botao_cadastro">
+                <button type="button" onclick="cadastro_adm()"  id="adm" value="1" class="botao"> Administrador </button>
+                <button type="button" onclick="cadastro_cliente()" id="cliente" value="2" class="botao"> Cliente </button>
+            </div>
+            
+            <div>
+                <button type="button" onclick="cadastrar()" class="botao_cadastrar"> Cadastrar </button>
+            </div>
+
+            <div class="referenciar_login">
+                <a href="login.html"> Já possui conta?</a>
+            </div>
+        </form>
+    </body>
+</html>

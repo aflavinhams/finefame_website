@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
+
+
+
+/* NAVBAR */
+.navbar{
+    background-color: white;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 1px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2; 
+}
+
+.top_lista{
+    padding-top: 100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.item-menu a{
+    float: right;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;   
+    padding: 10px 4%;
+    padding-right: 110px;
+}
+
+.txt{
+    line-height: 30px;
+    padding-right: 40px;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+}
+
+
+/* HEADER */
+@media screen and (max-width: 915px) {
+    .logo{
+        display: none;
+    }
+
+    .logo_png{
+        display: none;
+    }
+
+    .logo_txt{
+        display: none;
+    }
+}
+
+.logo{
+    padding-left: 20px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.logo_png{
+    width: 60px;
+    height: 60px;
+}
+
+.logo_txt{
+    font-size: 50px;
+    font-family: 'League Gothic', sans-serif;
+    line-height: 50px;
+}
+
+
+.pesquisar{
+    position: absolute;
+    left: 305px;
+    top: 50px;
+}
+
+@media screen and (max-width: 916px) {
+    .pesquisar{
+        position: absolute;
+        left: 15px;
+        top: 50px;
+    }
+    
+}
+
+.icon_pesquisar{
+    font-size: 15px;
+} 
+
+.buscar{
+    width: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-color: black;
+    outline: none;
+}
+
+.txt_menu{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 54px;
+    padding-right: 20px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* CARD */
+
+.quadros{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 240px;
+    height: 360px;
+    border: solid 2px black;
+    margin: 20px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 915px) {
+
+}
+
+/*.card:hover{
+    
+}*/
+
+.card_imagem{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    z-index: -1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card_obra{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.obra_nome{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'League Gothic', sans-serif;
+    color: #222222 ;
+    line-height: 30px;
+}
+
+.obra_pintor{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;    
+    color: #3b3b3b ;
+}
+
+.card_baixo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-baixo i{
+    color: white;
+}
+
+.baixo_valor{
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'League Gothic', sans-serif;
+    color: #222222 ;
+}
+
+.baixo_botao{
+    width: 100%;
+    height: 50px;
+    border: solid 2px black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: black;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.baixo_botao:hover{
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    transition: 0.5s;
+}

@@ -1,0 +1,73 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <script defer src="js/index.js"></script> 
+    </head>
+
+    <body id="adm" class="adm">
+
+        <header class="header">
+            <div id="txt_menu" class="txt_menu" onclick="showMenu()" id="btn">  Menu </div>
+        </header>
+        <nav class="navbar">
+
+            <ul class="top_lista">
+                <li class="item-menu">
+                    <a href="http://localhost/fineFame/index.html">
+                        <span class="txt">Início</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="index.html">
+                        <span class="txt">Cadastro</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="excluir_quadros.html">
+                        <span class="txt">Excluir</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <div class="logo_txt_pagina">PÁGINA</div>
+            <img class="logo_png" src="img/tube.png">
+            <div class="logo_txt_adm">ADMINISTRADOR</div>
+        </div>
+
+        <form class="form" id="formulario" >
+            <div class="titulo">Cadastrar Quadro</div>
+            <div class="input-file">
+                <label for="imagem"><i class="fa-regular fa-image"></i></label>
+                <input type="file" enctype="multipart/form-data" id="imagem" name="imagem" class="file">
+            </div>
+            <div class="input-form">
+                <i class="fa-solid fa-palette"></i>
+                <input type="text" placeholder="Nome da obra" name="nome_obra" id="nome_obra">
+            </div>
+            <div class="input-form">
+                <i class="fa-solid fa-signature"></i>
+                <input type="text" placeholder="Nome do autor" name="nome_autor" id="nome_autor">
+            </div>
+            <div class="input-form">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <input type="text" placeholder="valor" name="valor_obra" id="valor_obra">
+            </div>
+            
+            <div>
+                <button type="button" onclick="cadastrar()" class="botao"> Cadastrar </button>
+            </div>
+
+        </form>
+        
+    </body>
+</html>

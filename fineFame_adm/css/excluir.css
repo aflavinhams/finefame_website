@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
+
+.navbar{
+    background-color: white;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 1px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2; 
+}
+
+.top_lista{
+    padding-top: 100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.item-menu a{
+    float: right;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;   
+    padding: 10px 4%;
+    padding-right: 110px;
+}
+
+.txt{
+    line-height: 30px;
+    padding-right: 40px;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+}
+
+
+/* HEADER */
+
+.txt_menu{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 35px;
+    padding-right: 20px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.logo{
+    padding-left: 20px;
+    padding-top: 15px;
+    display: flex;
+}
+
+.logo_png{
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (max-width: 916px) {
+    .logo_png{
+        display: none;
+    }
+    
+}
+
+.logo_txt_pagina{
+    font-size: 40px;
+    font-family: 'League Gothic', sans-serif;
+    line-height: 50px;
+}
+
+@media screen and (max-width: 916px) {
+    .logo_txt_pagina{
+        display: none;
+    }
+    
+}
+
+.logo_txt_adm{
+    font-size: 40px;
+    font-family: 'League Gothic', sans-serif;
+    line-height: 50px;
+}
+
+/* FORMULÁRIO */
+
+.form{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 916px) {
+    .titulo{
+        font-size: 42px;
+    }
+    
+}
+
+.sub-titulo{
+    font-family: 'Raleway', sans-serif;   
+    font-style: italic;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 916px) {
+    .sub-titulo{
+        font-size: 27px;
+    }
+    
+}
+
+.input-form{
+    width: 300px;
+    height: 60px;
+    min-width: 200px;
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    margin: 5px;
+}
+
+.input-form select{
+    width: 100%;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 916px) {
+    .input-form select{
+        font-size: 24px;
+    }
+    
+}
+
+.input-form i{
+    position: absolute;
+    top: 22px;
+    left: 16px;
+}
+
+
+.botao{
+   background-color: black;
+   color: white;
+   width: 300px;
+   height: 40px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 916px) {
+    .botao{
+        width: 245px;
+        font-size: 20px;
+    }
+    
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    transition: 0.5s;
+}
+

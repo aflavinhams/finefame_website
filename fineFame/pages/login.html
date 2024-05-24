@@ -1,0 +1,85 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <script defer src="../js/login.js"></script> 
+    </head>
+
+    <body id="login" class="login">
+
+        <nav class="navbar">
+
+            <ul class="top_lista">
+                <li class="item-menu">
+                    <a href="../index.html">
+                        <span class="txt">Início</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="carrinho.html">
+                        <span class="txt">Carrinho</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="login.html">
+                        <span class="txt">Login</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="cadastro.html">
+                        <span class="txt">Cadastro</span>
+                    </a>
+                </li>
+            </ul>
+                
+        </nav>
+        
+        <header class="header">
+            <div class="logo">
+                <div class="logo_txt">FINE</div>
+                <img class="logo_png" src="../img/tube.png">
+                <div class="logo_txt">FAME</div>
+            </div>
+
+            <div id="txt_menu" class="txt_menu" onclick="showMenu()" id="btn"> Menu </div>
+        </header>
+
+        <form class="form" id="form">
+            <div class="titulo">Login</div>
+
+            
+
+            <div class="input-form">
+                <i class="fa-solid fa-paintbrush"></i>                
+                <input type="text" placeholder="E-mail" name="email" id="usuario">
+            </div>
+
+            <div class="input-form">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Senha" name="senha" id="senha">
+            </div>
+           
+            <div class="botao_cadastro">
+                <button type="button" onclick="login_adm(1)" id="adm" value="1" class="botao">Administrador</button>
+                <button type="button" onclick="login_cliente(2)" id="cliente" value="2" class="botao">Cliente</button>
+            </div>
+            
+            <div>
+                <button type="button" onclick="logar()" class="botao_cadastrar" name="submit"> Enter </button>
+            </div>
+
+            <div class="referenciar_login">
+                <a href="cadastro.html"> Não possui conta?</a>
+            </div>
+        </form>
+    </body>
+</html>
